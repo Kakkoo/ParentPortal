@@ -17,7 +17,7 @@ const router = express.Router();
 // @access Public
 
 router.post("/register", (req, res) => {
-  // console.log('req: ', req.body);
+   console.log('req: ', req.body);
   // console.log('res: ', res);
   const { errors, isValid } = validateRegisterInput(req.body);
   console.log("errors: ", errors);
