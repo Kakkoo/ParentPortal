@@ -8,7 +8,7 @@ const nodemailer = require("nodemailer");
 const lodash = require("lodash");
 const app = express();
 
-//Body parser configuration
+//Body parser configuration redeploy
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
