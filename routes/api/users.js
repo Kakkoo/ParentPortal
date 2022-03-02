@@ -16,6 +16,17 @@ const router = express.Router();
 // @desc Register user
 // @access Public
 
+router.get("/getuser", (req, res) => {
+  console.log('req: ', req.body);
+
+ User.findOne({ email: req.body.email }).then((user) => {
+   console.log("user: ", user);
+   if (user) {
+     return res.json(user);
+   } 
+ });
+});
+
 router.post("/register", (req, res) => {
    console.log('req: ', req.body);
   // console.log('res: ', res);
