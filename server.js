@@ -17,14 +17,14 @@ app.use('/api/users', users);
 const port = process.env.port  || 7200;
 app.listen(port, () => console.log(`Server running on port ${port}`));
 
-//Db config
+/* //Db config
 const db = require('./config/keys').mongoURI;
 
 //Connect to MongoDB
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDb Connected'))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log(err)); */
 
 
 
